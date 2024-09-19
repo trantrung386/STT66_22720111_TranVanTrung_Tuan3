@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky World Tours</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(51, 166, 224);
+            color: white;
+        }
+        nav {
+            background-color: rgb(131, 243, 251);
+            padding: 10px;
+            border-bottom: 2px dashed #000;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            position: relative;
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+        }
+        nav ul li:hover > a {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(131, 243, 251, 0.9);
+            padding: 0;
+            list-style: none;
+            z-index: 1000;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul li {
+            display: block;
+            margin: 0;
+        }
+        nav ul li ul li a {
+            display: block;
+            padding: 10px;
+            white-space: nowrap;
+        }
+        nav ul li ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+        nav p {
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #fff;
+            margin-left: 1200px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .form-section {
+            width: 50%;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .form-section h1 {
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .form-section p {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        label, select, input, textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        select, input, textarea {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"], button {
+            width: auto;
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #b3b5b8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button {
+            background-color: #1f1e1e;
+        }
+        .aside {
+            width: 40%;
+            text-align: center;
+        }
+        .aside img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .aside h2 {
+            font-size: 28px;
+            margin-top: 20px;
+            color: #0000ff;
+        }
+        .aside p {
+            font-size: 20px;
+            color: #1331dc;
+        }
+        footer {
+            background-color: rgb(73, 170, 235);
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a>
+                <ul>
+                    <li><a href="#">AAA</a></li>
+                    <li><a href="#">BBB</a></li>
+                    <li><a href="#">CCC</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p>Sky World</p>
+    </nav>
+
+    <div class="container">
+        <div class="form-section">
+            <h1>Registration Information</h1>
+            <p>Start your travel planning right now with our on-line tour registration form. Just tell us a little about yourself and your group and one of our travel experts will contact you to create the perfect tour package custom built for your group's needs.</p>
+            <form>
+                <label for="title">Title</label>
+                <select id="title">
+                    <option>Mr.</option>
+                    <option>Mrs.</option>
+                </select>
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" placeholder="Full Name">
+                <label for="address">Mailing Address</label>
+                <input type="text" id="address" placeholder="Mailing Address">
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="City">
+                <label for="country">Country</label>
+                <input type="text" id="country" placeholder="Country">
+                <label for="questions">Specific questions or requests about your tour</label>
+                <textarea id="questions" placeholder="Specific questions or requests about your tour"></textarea>
+                <input type="submit" value="Submit">
+                <button type="reset">Reset</button>
+            </form>
+        </div>
+
+        <div class="aside">
+            <img src="../img/sky.png" alt="Sky World Image">
+            <h2>You've arrived.</h2>
+            <p>Journeys as great as the destinations.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy;2016 Sky World Tours. All rights reserved.</p>
+        <p>Contact information: Student Name | Student ID | Testing date: 16 Sept 2016</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autumn Travel Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #8B4513;
+            color: rgb(112, 205, 112);
+            padding: 10px;
+            border: 2px solid #000;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-table;
+            margin-left: 20px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: red;
+        }
+
+        nav li:hover a {
+            background-color: #eacee1;
+        }
+
+        nav li .sub-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            
+        }
+
+        nav li .sub-menu li {
+            display: block; 
+            width: 100%;
+        }
+
+        nav li:hover .sub-menu {
+            display: block;
+        }
+  
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .container img{
+            padding: 5px;
+            width: 100%;
+            height: 100px;
+        }
+        
+        .signup>h2,  .signup>p{
+            color: rgb(245, 171, 10);
+        }
+        .signup>p{
+            margin-left: 20px;
+        }
+
+        
+        .links {
+            width: 48%;
+            background-color: rgb(240, 206, 206);
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+        .links .more-info{
+            background-color: white;
+        }
+        .input-field {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+            font-size: 16px;
+        }
+        form{
+            max-width: 400px;
+            margin-left: 20px;
+        }
+       
+        label {
+            font-size: 14px;
+            color: #666;
+        }
+        .input-field:focus {
+            outline: none;
+            border-bottom: 1px solid #000;
+        }
+        button{
+            background-color: rgb(238, 238, 88);
+            color: #e8abab;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px;
+            background-color: #1b509b;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AUTUMN TRAVEL COMPANY</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">1111</a></li>
+                        <li><a href="#">2222</a></li>
+                        <li><a href="#">3333</a></li>
+                     </ul>
+                </li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Order</a></li>
+            </ul>
+        </nav>
+        <img src="../img/hoa.jpg" alt="">
+        
+        <div class="content">
+            <section class="signup">
+                <h2>Sign up for membership benefits</h2>
+                <p>Our philosophical values are transparency, respect, formality, and responsibility. Our stimulus is your enthusiasm. Our motto is your satisfaction.</p>
+
+                <form>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" class="input-field">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" class="input-field">
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="input-field">
+
+                    <label for="retype-password">Retype password</label>
+                    <input type="password" id="retype-password" name="retype-password" class="input-field">
+
+                    <button type="submit">SIGN ME UP</button>
+                </form>
+            </section>
+
+            <aside class="links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#">Make your Own Tour</a></li>
+                    <li><a href="#">Maldives Tours</a></li>
+                    <li><a href="#">Nature & Adventure</a></li>
+                    <li><a href="#">Readymade Tours</a></li>
+                    <li><a href="#">Europe Tours</a></li>
+                    <li><a href="#">Russia Tours</a></li>
+                </ul>
+
+                <div class="more-info">
+                    <h3>More info</h3>
+                    <p>Our purpose is the client who gives us the opportunity to serve and to make known the reality around the world.</p>
+                </div>
+            </aside>
+        </div>
+
+        <footer>
+            <p>© 2017 Software Engineering Department | Test Date: 16 Sept 2017</p>
+        </footer>
+    </div>
+</body>
+</html>
